@@ -198,11 +198,12 @@ body{
 	padding:5px;
 }
 
+
 .title::before
 {
 	content:'';
 	background:gold;
-	height:5px;
+	min-height:5px;
 	width:200px;
 	margin-left:auto;
 	margin-right:auto;
@@ -212,9 +213,10 @@ body{
 
 .title::after
 {
+
 	content:'';
 	background:gold;
-	height:10px;
+	min-height:10px;
 	width:50px;
 	margin-left:auto;
 	margin-right:auto;
@@ -276,7 +278,6 @@ body{
 #about-us .img-fluid
 {
 	margin-top:20px; 
-margin-left:50px;
  height:450px;
 }
 
@@ -365,7 +366,7 @@ transition:0.5s;
 .footer-box
 {
 	padding:20px;
-
+	margin-left:4px;
 }
 
 .footer-box img
@@ -380,6 +381,7 @@ transition:0.5s;
 
 .footer-box .fa
 {
+	margin-left:4px;
 	margin-right:8px;
 	font-size:25px;
 	height:40px;
