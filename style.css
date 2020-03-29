@@ -3,6 +3,7 @@
 	padding:0;
 
 }
+
 body{
 	cursor:default;
 	font-family:sans-serif;
@@ -211,6 +212,7 @@ body{
 	transform:translateY(63px);
 }
 
+
 .title::after
 {
 
@@ -218,6 +220,7 @@ body{
 	background:gold;
 	min-height:10px;
 	width:50px;
+	position:relative;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:40px;
@@ -226,6 +229,7 @@ body{
 }
 #services .btn-primary
 {
+	position:relative;
  	margin-top:10px; 
 	color:white;
 	font-weight:600;
@@ -299,9 +303,8 @@ body{
 
 #testimonials
 {
-	margin:100px 0;
+	margin:120px 0;
 }
-
 .testimonials
 {
 	border-left:4px solid rgb(234,134,236);
@@ -366,7 +369,6 @@ transition:0.5s;
 .footer-box
 {
 	padding:20px;
-	margin-left:4px;
 }
 
 .footer-box img
@@ -381,7 +383,6 @@ transition:0.5s;
 
 .footer-box .fa
 {
-	margin-left:4px;
 	margin-right:8px;
 	font-size:25px;
 	height:40px;
