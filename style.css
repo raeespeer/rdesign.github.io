@@ -37,7 +37,6 @@ body{
 }
 .navbar-brand img
 {	
-
 	height:40px;
 	padding-left:20px;
 }
@@ -90,10 +89,7 @@ body{
 #banner	
 {
 	background-color:black;
-	background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('./images/banner-bg.jpg');
+	background-image:url('./images/banner-bg.jpg');
 
 	transform: translate3d(-2.09187px, -2.05479px, 0px);
 	width:100%;
@@ -110,34 +106,57 @@ body{
 	filter:grayscale(0%);
 }
 
-.intro{
-	position:relative;
-	margin-top:100px;
-	margin-bottom:100px;
-	font-family:inherit;
-	text-transform: uppercase;
-	font-weight:400;
-	font-size:7em;
-	font-size: 7vw;
-	filter:drop-shadow(8px 8px 10px gray);
-	letter-spacing: 3px;
-	overflow:visible;
-	background: linear-gradient(-90deg, #000, #000, #fff);
-	background-repeat: no-repeat;
-	background-size: 80%;
-	animation: animate 8s linear infinite;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+@keyframes raees {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
 }
 
-@keyframes animate {
-	0% {
-		background-position: -500%;
-	}
-	100% {
-		background-position: 500%;
-	}
+.intro {
+padding-top:200px;
+background-size:cover;
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 80px;
+  font-size:7vw;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
+
+.intro:before,
+.intro:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 80%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out raees;
+}
+
+.intro:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.intro:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
 
 .fa-sign-in	
 {
