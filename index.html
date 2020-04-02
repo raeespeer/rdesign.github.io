@@ -15,10 +15,18 @@
 </head>
 
 <body>
-	<div class="loader-wrapper">
-		<span class="loader"><span class="loader-inner"></span></span>
-	</div>	
+	
+	<div class="spinner-wrapper">
+		<div class="spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
 
+	
 	<section id="nav-bar">
 
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -229,17 +237,26 @@
 </section>
 
 <!---------------- Smooth Scroll ------------------->
+<script>
+
+	document.onreadystatechange = function() { 
+		if (document.readyState !== "complete") { 
+			document.querySelector("body").style.visibility = "hidden"; 
+			document.querySelector(".spinner-wrapper").style.visibility = "visible"; 
+		} else { 
+			document.querySelector(".spinner-wrapper").style.display = "none"; 
+			document.querySelector("body").style.visibility = "visible"; 
+		} 
+	}; 
+</script>
+
+
 <script src="smooth-scroll.js">	</script>
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
-<!---------- loading ---------------->
-<script>
-	$(window).on("load",function(){
-		$(".loader-wrapper").fadeOut("slow");
-	});
-</script>
+
 
 </body>
 
