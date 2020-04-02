@@ -12,7 +12,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+	background-color:black;
 	/* change if the mask should have another color then white */
 	z-index: 99;
 	/* makes sure it stays on top */
@@ -29,11 +29,11 @@
 }
 
 .spinner > div {
-	background-color: #333;
+	background-color:white;
 	height: 100%;
 	width: 6px;
 	display: inline-block;
-	
+
 	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
 	animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
@@ -163,7 +163,8 @@
 		background-image:url('./images/banner-bg.jpg');
 
 		transform: translate3d(-2.09187px, -2.05479px, 0px);
-		width:100%;
+		max-width:100%;
+		max-height:auto;
 		filter:grayscale(100%);
 		background-size: cover;
 		background-repeat:no-repeat;
@@ -329,7 +330,7 @@
 		border-radius:20px;
 		box-shadow: inset 0 0 0 0 red;
 		transition: ease-out 1s;
-		
+
 	}
 
 	#services .btn-primary:hover
