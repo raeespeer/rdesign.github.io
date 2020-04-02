@@ -4,6 +4,33 @@
 
 }
 
+/*--------------loading--------------*/
+
+.loader {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 50%;                       /******** <- Remove this line *********/
+	border: 4px solid black;
+	animation: loader 2s infinite ease;
+}
+
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #242f3f;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*---------------body---------------------*/
+
 body{
 	cursor:default;
 	font-family:sans-serif;
@@ -27,7 +54,7 @@ body{
 	top:0;
 	z-index:10;
 	filter:drop-shadow(8px 8px 10px black);
-	 transition: top 0.3s; 
+	transition: top 0.3s; 
 }
 .navbar{
 	background-image: radial-gradient(ellipse 
@@ -108,53 +135,53 @@ body{
 
 
 @keyframes raees {
-  0 {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
-  }
+	0 {
+		transform: translateX(-50%) translateY(-50%) rotate(0deg);
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) rotate(360deg);
+	}
 }
 
 .intro {
-padding-top:200px;
-background-size:cover;
-  color: #fffbf1;
-  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 80px;
-  font-size:7vw;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: -3px;
-  margin: 0;
-  position:relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+	padding-top:200px;
+	background-size:cover;
+	color: #fffbf1;
+	text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+	font-size: 80px;
+	font-size:7vw;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: -3px;
+	margin: 0;
+	position:relative;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 .intro:before,
 .intro:after {
-  content: '';
-  padding: .9em .4em;
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  top: 80%;
-  display: block;
-  border: 15px solid red;
-  transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s infinite alternate ease-in-out raees;
+	content: '';
+	padding: .9em .4em;
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	top: 80%;
+	display: block;
+	border: 15px solid red;
+	transform: translateX(-50%) translateY(-50%) rotate(0deg);
+	animation: 10s infinite alternate ease-in-out raees;
 }
 
 .intro:before {
-  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  z-index: -1;
+	border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	z-index: -1;
 }
 
 .intro:after {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
-  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+	box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
 
 
@@ -175,7 +202,7 @@ background-size:cover;
 	font-weight:600;
 	box-shadow: inset 0 0 0 0 white;
 	text-decoration:none;
-  transition: ease-out 1s;
+	transition: ease-out 1s;
 }
 #banner .btn-primary:hover
 {	
@@ -249,7 +276,7 @@ background-size:cover;
 #services .btn-primary
 {
 	position:relative;
- 	margin-top:10px; 
+	margin-top:10px; 
 	color:white;
 	font-weight:600;
 	background-color:black; 
@@ -257,7 +284,7 @@ background-size:cover;
 	border:none;
 	border-radius:20px;
 	box-shadow: inset 0 0 0 0 red;
-    transition: ease-out 1s;
+	transition: ease-out 1s;
 	
 }
 
@@ -301,20 +328,20 @@ background-size:cover;
 #about-us .img-fluid
 {
 	margin-top:20px; 
- height:450px;
+	height:450px;
 }
 
 #about-us .blink
 {
-    animation:blinkingText 1.2s infinite;
+	animation:blinkingText 1.2s infinite;
 }
 
 @keyframes blinkingText{
-    0%{     color: #fff;    }
-    49%{    color: #fff; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #fff;    }
+	0%{     color: #fff;    }
+	49%{    color: #fff; }
+	60%{    color: transparent; }
+	99%{    color:transparent;  }
+	100%{   color: #fff;    }
 }
 
 
@@ -360,9 +387,9 @@ background-size:cover;
 }
 .social-icons img
 {
-width:40px;
-margin-right:10px;
-transition:0.5s;
+	width:40px;
+	margin-right:10px;
+	transition:0.5s;
 
 }
 .social-icons a:hover img
@@ -411,6 +438,7 @@ transition:0.5s;
 	border-radius:2px;
 }
 
+
 .footer-box .form-control
 {
 	box-shadow:none !important;
@@ -419,15 +447,17 @@ transition:0.5s;
 	margin-top:25px;
 	max-width:250px;
 }
+
 .footer-box .btn-primary
 {
 	color:black;
 	border: none;
+	width:60px;
 	background-color:white;
 	border-radius:0;
 	margin-top:30px;
 	box-shadow: inset 0 0 0 0 rgb(234,132,217);
-    transition: ease-out 1s;
+	transition: ease-out 1s;
 }
 .footer-box .btn-primary:hover
 {
