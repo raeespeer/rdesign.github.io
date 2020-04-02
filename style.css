@@ -163,8 +163,7 @@
 		background-image:url('./images/banner-bg.jpg');
 
 		transform: translate3d(-2.09187px, -2.05479px, 0px);
-		max-width:100%;
-		max-height:auto;
+		width:100%;
 		filter:grayscale(100%);
 		background-size: cover;
 		background-repeat:no-repeat;
