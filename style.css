@@ -76,14 +76,6 @@
 	/*---------------body---------------------*/
 
 	body{
-			background:url('./images/bg.jpg') no-repeat;
-		transform: translate3d(-2.09187px, -2.05479px, 0px);
-		background-size: cover;
-		color:#000;
-		width:100%;
-		background-attachment: fixed;
-		min-height:620px;
-
 		cursor:default;
 		font-family:sans-serif;
 		animation: fadeInAnimation ease 2s; 
@@ -104,38 +96,24 @@
 		cursor:auto;
 		position:sticky;
 		top:0;
-		margin-top:-80px;
-		z-index:1;
-		background:transparent;
-			/*opacity:0.5;*/
+		z-index:10;
 		filter:drop-shadow(8px 8px 10px black);
 		transition: top 0.3s; 
- 
 	}
-	.opaque-navbar{
-		position:absolute;
-             background-color:transparent;
-        }
-	.navbar-collapse
-    {
-    	border-bottom-color: transparent !important;
-box-shadow: none !important;
-background-color: transparent;
-
-    }  
-	.navbar-brand p
-	{
-		font-size:35px;
-		font-weight:600;
-		color:#fff;
+	.navbar{
+		background-image: radial-gradient(ellipse 
+			150px 60px at 110px top,
+			#fff, #000);
+		padding:0 !important
+	}
+	.navbar-brand img
+	{	
 		height:40px;
 		padding-left:20px;
 	}
 	.navbar-nav li
 	{
-
 		padding:0 10px;
-
 	}    
 	.navbar-nav li a
 	{
@@ -156,13 +134,13 @@ background-color: transparent;
 		border:none;
 		outline:none;
 		padding: 0;
-		/*color:white;*/
-		/*background-color:transparent;*/
+		color:white;
+		background-color:transparent;
 	}
 
 	.navbar-nav .dropdown-item:hover
 	{ 
-		/*background-color:black;	*/
+		background-color:black;	
 		opacity:0.1;
 	}
 
@@ -172,7 +150,6 @@ background-color: transparent;
 	}
 
 	.navbar-toggler
-
 	{
 		outline:none !important;
 	}
@@ -181,20 +158,16 @@ background-color: transparent;
 	/*----------------------------banner section----------------------*/
 
 	#banner	
-	{/*
-		background-color:black;*/
-	
-		background:url('./images/robot.png' width="250px" height="250px");
-		
+	{
+		background-color:black;
+		background:url('./images/banner-bg.jpg') no-repeat 50% fixed;
 		transform: translate3d(-2.09187px, -2.05479px, 0px);
 		filter:grayscale(100%);
 		background-size: cover;
-		color:#000;
+		color:#fff;
 		width:100%;
 		background-attachment: fixed;
 		min-height:620px;
-		
-
 	}
 	
 
@@ -203,10 +176,6 @@ background-color: transparent;
 		filter:grayscale(0%);
 	}
 
-	#banner .robot{
-
-	
-	}
 
 	.banner-box{
 		position:relative;
@@ -237,20 +206,19 @@ background-color: transparent;
 
 		color:black;
 		background-color:white; 
+		padding: 8px 20px;
 		border:none;
-		font-size:30px;
 		margin-top:10px;
 		border-radius:20px;
-		font-weight:700;
+		font-weight:600;
 		box-shadow: inset 0 0 0 0 black;
 		text-decoration:none;
 		transition: ease-out 1s;
 		margin-right:10px;
 		margin:auto;
-		margin-left:375px;
 		outline:none;
 		margin-top:15px;
-		width:300px;
+		width:150px;
 		margin-bottom:5px;
 
 	}
@@ -259,7 +227,7 @@ background-color: transparent;
 		border:none;
 		color:white;
 		text-decoration:none;
-		box-shadow: inset 0 400px 0 0 red;
+		box-shadow: inset 400px 0 0 0 silver;
 	}
     
     #banner .sign:hover
@@ -280,10 +248,10 @@ background-color: transparent;
 		font-size:80px;
 		font-weight: bold;
 		text-decoration: none;
-		padding-top:150px;
-		position:relative;
+		
+		position:static;
 		top: 50%;
-		left: 20%;
+		left: 50%;
 		/*transform: translateX(-50%) translateY(-50%);*/
 
 	}
@@ -300,7 +268,7 @@ background-color: transparent;
 		/*---------services-------------*/
 
 		#services
-		{	background-color:white;
+		{
 			background-size: cover;
 			padding:80px 0;
 
