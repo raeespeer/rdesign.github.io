@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to R Designs</title>
-	<meta charset="utf-8" name="viewport"content="width=device-width,initial-scale=1.0"> 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<!-- <script src="script.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min
-	.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Welcome to R Designs</title>
+<meta charset="utf-8" name="viewport"content="width=device-width,initial-scale=1.0"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- <script src="script.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min
+.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body>
-	
-	<div class="spinner-wrapper">
-		<div class="spinner">
-			<div class="rect1"></div>
-			<div class="rect2"></div>
-			<div class="rect3"></div>
-			<div class="rect4"></div>
-			<div class="rect5"></div>
-		</div>
+
+<div class="spinner-wrapper">
+	<div class="spinner">
+		<div class="rect1"></div>
+		<div class="rect2"></div>
+		<div class="rect3"></div>
+		<div class="rect4"></div>
+		<div class="rect5"></div>
 	</div>
+</div>
 
-	
-	<section id="nav-bar">
 
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#"><img src="./images/rdesigns.png"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fa fa-bars" aria-hidden="true"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item ">
-						<a class="nav-link" href="#top">...home<span class="sr-only">(current)</span></a>
-					</li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">...login/signup</a>
-    </li> -->
-    <li class="nav-item">
-    	<a class="nav-link" href="#about-us">...about us</a>
-    </li>
+<section id="nav-bar">
 
-    <li class="nav-item">
-    	<a class="nav-link" href="#testimonials">...testimonial</a>
-    </li>
-      <!-- <li class="nav-item dropdown ml-auto">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ...our works
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-    </li> -->
-    <li class="nav-item">
-    	<a class="nav-link" href="#footer">...contact</a>
-    </li>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="#"><img src="./images/rdesigns.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item ">
+					<a class="nav-link" href="#top">...home<span class="sr-only">(current)</span></a>
+				</li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="myReg()">...login</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="#" onclick="myClick()">...signup</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="#about-us">...about us</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#testimonials">...testimonial</a>
+</li>
+  <!-- <li class="nav-item dropdown ml-auto">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ...our works
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</li> -->
+<li class="nav-item">
+	<a class="nav-link" href="#footer">...contact</a>
+</li>
 </ul>
 </div>
 </nav>
@@ -69,165 +72,219 @@
 </section>
 <!-- banner section -->
 <section id="banner">
-	<div class="container">
-		<div class="row">
-			<p class="intro">Welcome to R Designs</p>
-			<div class="col-md-6">
-				<p class="promo">This is a network for graphic designers and customers , any graphic design orders are accepted and this network will give orders to freelancers and you clients will be benifitted to get your brochures , invites delivered to you on time.</p>
-				<a href="#"><button type="button" class="btn btn-primary">Sign In / Sign Up<i class="fa fa-sign-in" aria-hidden="true"></i></button></a>
-			</div>
-			
-		</div>
+<div class="container">
 		
+	<div class="row">
+		<div class="col-md-9">
+		<p class="intro">Welcome to</p>
+		<p class="intro">RDesigns</p>
+		<p>This is a network for graphic designers and customers , any graphic design orders are accepted and this network will give orders to freelancers and you clients will be benifitted to get your brochures , invites delivered to you on time.</p>
+		</div>	
+
+		<div class="col-md-3 banner-box" id="signin">
+
+				<h2>Welcome !</h2>
+		
+				<form action="">
+					<br><label>Username</label>	
+				<br><input type="text" name="uname" placeholder="Enter Username" class="login-control">
+				<br><label>
+				Password</label>
+				<br><input type="password" name="pwd" placeholder="Enter Password" class="login-control">
+		
+				<br><button type="submit" class="btn btn-primary">Sign In</button>
+				<br><button type="button" class="btn btn-primary sign" onclick="myClick()">Sign Up<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+			</form>	
+		</div>
+		<div class="col-md-3 banner-box" id="signup" style="display:none">
+				<h2>Join Us !</h2>
+				<!--signup form  -->
+				<form action="" method="post">
+				<br><label>
+					First Name</label>
+				<br><input type="text" name="fname" placeholder="Enter Username" class="login-control" required>
+				
+				<br><label>Last Name</label>
+				<br><input type="text" name="lname" placeholder="Enter Username" class="login-control" required>
+				
+				<br><label>
+					Username</label>
+				<br><input type="text" name="uname" placeholder="Enter Username" class="login-control" required>
+				
+				<br><label>
+				Password </label>
+				<br><input type="password" name="pwd1" placeholder="Enter Password" class="login-control" required>
+			   
+				<br><label>
+					Confirm Password</label>
+					<br><input type="password" name="pwd2" placeholder="Re-Enter Password" class="login-control" required>
+				
+				<br><label>
+				Email Address</label>
+				<br><input type="email" name="pwd" placeholder="Enter Email Id" class="login-control" required>
+						
+				
+				<br><button type="submit" class="btn btn-primary">Register</button>
+				<br><button type="submit" class="btn btn-primary sign" onclick="myReg()">Sign In<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+			</form>	
+		</div>
+
+		
+		
+		<!-- <div class="col-md-6 text-center">
+			<img src="./images/.jpg" class="img-fluid">
+
+		</div> -->
 	</div>
+</div>
 </section>
 
 
 <!-- services section -->
 <section id="services">
-	<div class="container text-center">
-		<h2 class="title">Our Services</h2>
-		<div class="row">
-			<div class="col-md-4 services">
-				<img src="./icons/ads.png" class="service-img">
-				<h5>Advertisement Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4 services">
-				<img src="./icons/poster.png" class="service-img">
-				<h5>Poster Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4 services">
-				<img src="./icons/inv.png" class="service-img">
-				<h5>Invitation Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4 services">
-				<img src="./icons/banner.png" class="service-img">
-				<h5>Banner Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4 services">
-				<img src="./icons/logo.png" class="service-img">
-				<h5>Logo Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-md-4 services">
-				<img src="./icons/custom.png" class="service-img">
-				<h5>Customized Design</h5>
-				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-			</div>	
+<div class="container text-center">
+	<h2 class="title">Our Services</h2>
+	<div class="row">
+		<div class="col-md-4 services">
+			<img src="./icons/ads.png" class="service-img">
+			<h5>Advertisement Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 		</div>
-		<a href="#"><button type="button" class="btn btn-primary">All Services</button></a>
+		<div class="col-md-4 services">
+			<img src="./icons/poster.png" class="service-img">
+			<h5>Poster Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-md-4 services">
+			<img src="./icons/inv.png" class="service-img">
+			<h5>Invitation Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-md-4 services">
+			<img src="./icons/banner.png" class="service-img">
+			<h5>Banner Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-md-4 services">
+			<img src="./icons/logo.png" class="service-img">
+			<h5>Logo Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-md-4 services">
+			<img src="./icons/custom.png" class="service-img">
+			<h5>Customized Design</h5>
+			<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>	
 	</div>
+	<a href="#"><button type="button" class="btn btn-primary">All Services</button></a>
+</div>
 </section>
 
 <!------------------About Us ------------------>
 <section id="about-us">
-	<div class="container">
-		<h2 class="title text-center" >Why R Design?</h2>
-		<div class="row">
-			<div class="col-md-6 about-us">
-				<p class="about-title">Meet the Boy! </p>
-				<ul>
-					<li>I am a CSE Undergraduate , enthuastic in finding new opportunities to learn.</li>
-					<li>I have interest in A.I., Data Analytics , front end web development and graphic designing.</li>
-					<li>Have been freelancing as a graphic designer since 2019 , got to meet alot of clients , started a startup GoGraphica in 2019.</li>
-					<li>Found alot of graphic designers in this freelancing side as a part time job.</li>
-					<li>My motive was to interconnect the demand of designs to the designers</li>
-					<li>To achieve this I started R Designs.<span class="blink"> |</span></li>											
-				</ul>
-			</div>
-			<div class="col-md-6">
-				<img src="./images/raees.jpeg" class="img-fluid">
-			</div>
-		</div>	
-	</div>
+<div class="container">
+	<h2 class="title text-center" >Why R Design?</h2>
+	<div class="row">
+		<div class="col-md-6 about-us">
+			<p class="about-title">Meet the Boy! </p>
+			<ul>
+				<li>I am a CSE Undergraduate , enthuastic in finding new opportunities to learn.</li>
+				<li>I have interest in A.I., Data Analytics , front end web development and graphic designing.</li>
+				<li>Have been freelancing as a graphic designer since 2019 , got to meet alot of clients , started a startup GoGraphica in 2019.</li>
+				<li>Found alot of graphic designers in this freelancing side as a part time job.</li>
+				<li>My motive was to interconnect the demand of designs to the designers</li>
+				<li>To achieve this I started R Designs.<span class="blink"> |</span></li>											
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<img src="./images/raees.jpeg" class="img-fluid">
+		</div>
+	</div>	
+</div>
 </section>
 
 <!----------------------- testimonials ----------------------------->
 <section id="testimonials">
-	<div class="container">
-		<h2 class="title text-center">Customer Stories</h2>
-		<div class="row offset-1">
-			<div class="col-md-5 testimonials">
-				<p>"I made many orders with them , they give a  quality work , They have given me the best for Gitex order at resonable price."</p>
-				<img src="./clients/c1.jpg">
-				<p class="user-details"><b>Suhail Mohamed</b><br>Business Development Manager<br>ITC Telecom FZCO</p>
-			</div>	
-			<div class="col-md-5 testimonials">
-				<p>"First of all I thank you for your invitation design... The design was so attractive and eye grabbing... The details given was perfectly made into it....There were no flaws in your work and it is perfectly executed on time"</p>
-				<img src="./clients/c2.jpg">
-				<p class="user-details"><b>Santhosh</b><br>Student</p>
-			</div>
-			<div class="col-md-5 testimonials">
-				<p>"My team and I were in urgent need of a banner for our food stall. Raees (R Designs) did a wonderful job of designing one for us. He even stayed up late in the night, patiently taking our inputs and adding his own imagination to give us a beautiful product at the end. I'm sure the banner doubled our sales. I definitely recommend him to anyone who requires well-designed posters, banners and such."</p>
-				<img src="./clients/c3.jpg">
-				<p class="user-details"><b>Mohamed Abrar</b><br>Student</p>
-			</div>		
+<div class="container">
+	<h2 class="title text-center">Customer Stories</h2>
+	<div class="row offset-1">
+		<div class="col-md-5 testimonials">
+			<p>"I made many orders with them , they give a  quality work , They have given me the best for Gitex order at resonable price."</p>
+			<img src="./clients/c1.jpg">
+			<p class="user-details"><b>Suhail Mohamed</b><br>Business Development Manager<br>ITC Telecom FZCO</p>
+		</div>	
+		<div class="col-md-5 testimonials">
+			<p>"First of all I thank you for your invitation design... The design was so attractive and eye grabbing... The details given was perfectly made into it....There were no flaws in your work and it is perfectly executed on time"</p>
+			<img src="./clients/c2.jpg">
+			<p class="user-details"><b>Santhosh</b><br>Student</p>
 		</div>
-		
+		<div class="col-md-5 testimonials">
+			<p>"My team and I were in urgent need of a banner for our food stall. Raees (R Designs) did a wonderful job of designing one for us. He even stayed up late in the night, patiently taking our inputs and adding his own imagination to give us a beautiful product at the end. I'm sure the banner doubled our sales. I definitely recommend him to anyone who requires well-designed posters, banners and such."</p>
+			<img src="./clients/c3.jpg">
+			<p class="user-details"><b>Mohamed Abrar</b><br>Student</p>
+		</div>		
 	</div>
+	
+</div>
 
 </section>
 
 <!---------------------- Social Media  -------------------->
 <section id="social-media">
-	<div class="container text-center">
-		<p>Find Us On Social Media</p>
-		<div class="social-icons">
-			<a href="https://www.facebook.com/raeespeer"><img src="./icons/fb.png"></a>
-			<a href="https://www.instagram.com/raeestarboy/"><img src="./icons/ig.png"></a>
-			<a href="https://www.linkedin.com/in/raees-ahmed-96359297/"><img src="./icons/li.png"></a>
-			<a href="https://wa.me/919789907415?text=Hey%20RDesigns!"><img src="./icons/wapp.png"></a>
-			<a href="https://www.snapchat.com/add/raeeskhan28"><img src="./icons/sc.png"></a>
+<div class="container text-center">
+	<p>Find Us On Social Media</p>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/raeespeer"><img src="./icons/fb.png"></a>
+		<a href="https://www.instagram.com/raeestarboy/"><img src="./icons/ig.png"></a>
+		<a href="https://www.linkedin.com/in/raees-ahmed-96359297/"><img src="./icons/li.png"></a>
+		<a href="https://wa.me/919789907415?text=Hey%20RDesigns!"><img src="./icons/wapp.png"></a>
+		<a href="https://www.snapchat.com/add/raeeskhan28"><img src="./icons/sc.png"></a>
 
-		</div>
-	</div>	
+	</div>
+</div>	
 </section>
 
 <!-------------------------footer section ----------------->
 <section id="footer">
-	<img src="./images/header.png" class="bottom-img">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 footer-box">
-				<img src="./images/rdesigns.png">
-				<p>Join us on our Social Media Platform to get connected with us.</p>
-			</div>
-			<div class="col-md-4 footer-box">
-				<p style="margin-left:5px;"><b>CONTACT US</b></p>
-				<p><i class="fa fa-map-marker" aria-hidden="true"></i>Chennai, Tamilnadu</p>
-				<p><i class="fa fa-phone-square" aria-hidden="true"></i>+91 9789907415</p>
-				<p><i class="fa fa-envelope" aria-hidden="true"></i>raeespm28@gmail.com</p>
-			</div>
-			<div class="col-md-4 footer-box">
-				<p><b>SEND US YOUR WORDS</b></p>
-				<form
-				action="https://formspree.io/xwkqgdpo"
-				method="POST" >
-				<label>
-					Your Name
-					<input type="text" name="name" class="form-control" placeholder="Type your Name here..." required>
-				</label>
-				<label>
-					Your Email
-					<input type="email" name="_replyto" class="form-control" placeholder="Type your Email Id here..." required>
-				</label>
-				<label>
-					Your Message
-					<textarea name="message" rows="4" cols="50" class="form-control" placeholder="Type your message here..." style="resize:none" required></textarea>
-				</label>
-
-				<!-- your other form fields go here -->
-				<br>
-				<button type="submit" class="btn btn-primary ">Send</button>
-			</form>
+<img src="./images/header.png" class="bottom-img">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 footer-box">
+			<img src="./images/rdesigns.png">
+			<p>Join us on our Social Media Platform to get connected with us.</p>
 		</div>
+		<div class="col-md-4 footer-box">
+			<p style="margin-left:5px;"><b>CONTACT US</b></p>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i>Chennai, Tamilnadu</p>
+			<p><i class="fa fa-phone-square" aria-hidden="true"></i>+91 9789907415</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i>raeespm28@gmail.com</p>
+		</div>
+		<div class="col-md-4 footer-box">
+			<p><b>SEND US YOUR WORDS</b></p>
+			<form
+			action="https://formspree.io/xwkqgdpo"
+			method="POST" >
+			<label>
+				Your Name
+				<input type="text" name="name" class="form-control" placeholder="Type your Name here..." required>
+			</label>
+			<label>
+				Your Email
+				<input type="email" name="_replyto" class="form-control" placeholder="Type your Email Id here..." required>
+			</label>
+			<label>
+				Your Message
+				<textarea name="message" rows="4" cols="50" class="form-control" placeholder="Type your message here..." style="resize:none" required></textarea>
+			</label>
+
+			<!-- your other form fields go here -->
+			<br>
+			<button type="submit" class="btn btn-primary ">Send</button>
+		</form>
 	</div>
-	<hr>
-	<p class="copyright">Website Created By Raees © 2020</p>
+</div>
+<hr>
+<p class="copyright">Website Created By Raees © 2020</p>
 </div>
 
 </section>
@@ -235,21 +292,37 @@
 <!---------------- Smooth Scroll ------------------->
 <script>
 
-	document.onreadystatechange = function() { 
-		if (document.readyState !== "complete") { 
-			document.querySelector("body").style.visibility = "hidden"; 
-			document.querySelector(".spinner-wrapper").style.visibility = "visible"; 
-		} else { 
-			document.querySelector(".spinner-wrapper").style.display = "none"; 
-			document.querySelector("body").style.visibility = "visible"; 
-		} 
-	}; 
+document.onreadystatechange = function() { 
+	if (document.readyState !== "complete") { 
+		document.querySelector("body").style.visibility = "hidden"; 
+		document.querySelector(".spinner-wrapper").style.visibility = "visible"; 
+	} else { 
+		document.querySelector(".spinner-wrapper").style.display = "none"; 
+		document.querySelector("body").style.visibility = "visible"; 
+	} 
+};
+
+function myClick()
+{
+document.querySelector("#signin").style.display="none";
+document.querySelector("#signup").style.display="block";
+}
+
+function myReg(){
+document.querySelector("#signup").style.display="none";
+document.querySelector("#signin").style.display="block";	
+} 
+
+
+
+
+
 </script>
 
 
 <script src="smooth-scroll.js">	</script>
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 
